@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development node index.js",
-    "prod": "cross-env NODE_ENV=production node index.js",
-    "test": "cross-env NODE_ENV=test mocha app/**/**/*.test.js",
-    "test-watch": "nodemon --exec \"npm test\""
+    "dev": "export NODE_ENV=development && node index.js",
+    "prod": "export NODE_ENV=production && node index.js",
+    "test": "export NODE_ENV=test && mocha app/**/**/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'"
   },
   "author": "Stav Elmashally",
   "license": "ISC",
